@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+</style>
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+    <script src="https://apis.google.com/js/client.js?"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJgfNLOploRL4IlUVb_-neeJzuHypU0A0"
+    ></script>
+
+    <script src="https://kit.fontawesome.com/477a4c25de.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-primary" style="background-color: crimson;position: fixed;top:0;width: 100%">
+      <!-- Navbar content -->
+      <h1 style="padding-left: 2%; font-family: Georgia, serif;">
+        InformU.S <i class="fas fa-flag-usa"></i>
+        <!--<div
+          style="font-size: 20px; float: right; list-style-type: none;padding-right: 2%;"
+        >
+          <a id="out" href="about.html">
+            About
+          </a>
+        </div>-->
+      </h1>
+    </nav>
+
+    <div id="aText" style="margin-top:5%">
+      <p style="padding-left: 2%; font-stretch: condensed;font-size:60px;color: whitesmoke ">Election<br>Infromation</p>
+      <p style="padding-left: 2%; font-size:80px;color: yellow">You Need</p>
+    </div>
+    <div class="container">
+      <div class="centerInput">
+        <p style="font-size: 25px; font-style: italic; color: whitesmoke; -webkit-text-stroke: 1px black;">
+          Click The Green Button To Find Your Location:
+        </p>
+        <br />
+        <div class="searchField">
+          <input
+            placeholder="Address"
+            type="text"
+            class="form-control"
+            id="address"
+            readonly
+          />
+        </div>
+
+        <button
+          id="geolo"
+          type="button"
+          class="btn btn-success"
+          onclick="getLocation();"
+        >
+
+          <i class="fas fa-search-location"></i>
+        </button>
+
+        <div style="padding-top: 5%" id="elections"></div>
+        <div id="results"></div>
+        <br />
+        <div style="padding-top: 5%;" id="candidates"></div>
+        <br />
+
+        <div style="float: left; padding-top: 5%;" id="referendums"></div>
+
+        <div style="float: left; padding-top: 5%;" id="myReps"></div>
+      </div>
+    </div>
+
+    <h5 id="footer" style="font-size: 15px">
+      Find your representatives in your area/state. Candidate information and
+      propositions will be displayed during election cycles only.
+    </h5>
+
+    <div style="text-align: center; margin-bottom: 30px;font-size: 20px;color: white;">
+      <a href="about.html">About</a>
+      <span > | </span>
+      <a href="mailto: test@email.com?subject = DeadLinkReport&body = Message">Report Dead Link By Email</a>
+    </div>
+  </body>
+</html>

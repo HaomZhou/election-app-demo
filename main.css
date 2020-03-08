@@ -1,0 +1,52 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#aText{
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+}
+
+#address {
+  width: 40%;
+  height: 30px;
+  display: inline-block;
+  transform: scale(1.6);
+}
+
+#vals {
+  margin-top: 4%;
+  margin-right: 5%;
+  transform: scale(1.7);
+}
+
+#geolo {
+  margin-top: 4%;
+  transform: scale(1.7);
+}
+
+#results {
+  padding-top: 4%;
+}
+
+.centerInput {
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  padding-bottom: 3%;
+  font-style: italic;
+  padding-top: 10%;
+  font-weight: bold;
+  color: white
+}
+
+#out {
+  text-decoration: none;
+  color: white;
+}
+
+#out:hover {
+  color: #dc143c;
+}
